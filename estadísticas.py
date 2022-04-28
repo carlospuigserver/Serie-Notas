@@ -11,3 +11,21 @@ print(m)
 print("Cantidad de observaciones")
 print("Cantidad de Observaciones={}".format(m))
 
+
+#Media
+
+print("Media aritmética")
+notasmates=sum(Mates)
+mediaMates=notasmates/m
+print("La media aritmética de Mates es {}".format(mediaMates))
+
+notaslectura=sum(Lectura)
+mediaLectura=notaslectura/m
+print("La media aritmética de Lectura es {}".format(mediaLectura))
+
+notasescritura=sum(Escritura)
+mediaEscritura=notasescritura/m
+print("La media aritmética de Ecritura es {}".format(mediaEscritura))
+
+
+
