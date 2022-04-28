@@ -1,6 +1,8 @@
 # Serie-Notas
 
 La dirección github del repositorio es: https://github.com/carlospuigserver/Serie-Notas.git
+
+
 En este tranbajo, había que usar y trabajar con un dataset anteriormente establecido. Este al no ser muy ámplio, hemos tenido que buscar otro dataset tratando el mismo trema, pero teniendo este mucho más contenido.La gráfica de este, al tener muchas variables, se centra específicamente en la nota de matemáticas de los alumnos. 
 
 
