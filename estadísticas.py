@@ -28,4 +28,16 @@ mediaEscritura=notasescritura/m
 print("La media aritmética de Ecritura es {}".format(mediaEscritura))
 
 
+#Mediana
+
+print("Mediana")
+mediana=int(m/2)
+medMates=(Mates[mediana]+Mates[mediana+1]/2)
+print("La mediana en Mates es: {}".format(medMates))
+
+medLectura=(Lectura[mediana]+Lectura[mediana+1]/2)
+print("La mediana en Lectura es: {}".format(medLectura))
+
+medEscritura=(Escritura[mediana]+Escritura[mediana+1]/2)
+print("La mediana en Lectura es: {}".format(medEscritura))
 
