@@ -87,4 +87,64 @@ for numero in Escritura:
         print("La mejor nota de Escritura es", maxEscritura)
 
 
+#Moda
+print("moda")
+diccMates={}
+for num in Mates:
+    r=str(num)
+    if not r in diccMates:
+        diccMates[r]=1
+    else:
+        diccMates[r]+=1
+
+mayorFrec=0
+mayorNum=Mates[0]
+
+for num in diccMates:
+    if diccMates[num]>mayorFrec:
+        mayorNum=num
+        mayorFrec=diccMates[num]
+
+r=diccMates[str(mayorNum)]
+print(f"La note que mas se repite de Mates {mayorNum} (se encuentra {r} veces)")
+
+
+diccLectura={}
+for num in Lectura:
+    r=str(num)
+    if not r in diccLectura:
+        diccLectura[r]=1
+    else:
+        diccLectura[r]+=1
+
+mayorFrec=0
+mayorNum=Lectura[0]
+
+for num in diccLectura:
+    if diccLectura[num]>mayorFrec:
+        mayorNum=num
+        mayorFrec=diccLectura[num]
+
+r=diccLectura[str(mayorNum)]
+print(f"La note que mas se repite de Lectura {mayorNum} (se encuentra {r} veces)")
+
+
+diccEscritura={}
+for num in Escritura:
+    r=str(num)
+    if not r in diccEscritura:
+        diccEscritura[r]=1
+    else:
+        diccEscritura[r]+=1
+
+mayorFrec=0
+mayorNum=Escritura[0]
+
+for num in diccEscritura:
+    if diccEscritura[num]>mayorFrec:
+        mayorNum=num
+        mayorFrec=diccEscritura[num]
+
+r=diccEscritura[str(mayorNum)]
+print(f"La note que mas se repite de Escritura {mayorNum} (se encuentra {r} veces)")
 
