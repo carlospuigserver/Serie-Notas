@@ -7,6 +7,33 @@ En este tranbajo, había que usar y trabajar con un dataset anteriormente establ
 
 
 El código del programa es:
+
+
+
+
+### Main
+```
+
+import pandas as pnd
+import JMB as jmp
+import numpy as np
+
+#--- CREACION DE UN DATAFRAME ----
+dato = pnd.read_csv("Student_Performance_new(1).csv", header= 0, sep= ",")
+notas = list(dato["math percentage"])
+observaciones = pnd.DataFrame({'NOTAS': notas})
+
+#--- ANALISIS DE UNA CARACTERISTICA ---
+stats = jmp.JMPEstadisticas(observaciones['NOTAS'])
+stats.analisisCaracteristica()
+
+#--- ANALISIS DE UNA CARACTERISTICA ---
+stats = jmp.JMPEstadisticas(observaciones['NOTAS'])
+stats.analisisCaracteristica()
+```
+### JMPEstadísticas
+
+
 ```
 from collections import Counter
 from math import *
@@ -244,5 +271,5 @@ class JMPEstadisticas:
         print("-----------------------------------------\n")
         print("Generación de las gráficas...")
         self.visualizacion(media,mediana[0],cuartiles[0],cuartiles[1],cuartiles[2])
-        
         ```
+        
