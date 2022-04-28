@@ -8,3 +8,6 @@ for i in range (1,m):
     dicc = {"notas_mates":Mates, "notas_lectura":Lectura, "notas_escritura":Escritura}
 print(m)
 
+print("Cantidad de observaciones")
+print("Cantidad de Observaciones={}".format(m))
+
